@@ -1,4 +1,4 @@
-<form action="/restaurants" method="post">
+<!-- <form action="/restaurants" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <label for="name">Name: </label>
   <input type="text" name="restaurant[name]" id="name">
@@ -8,3 +8,7 @@
 
   <input type="submit">
 </form>
+ -->
+
+
+<%= render 'form', flat: @flat %>
