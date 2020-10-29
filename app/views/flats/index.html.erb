@@ -1,5 +1,11 @@
-<% @flats.each do |flat| %>
-<h2><% flat.name %></h2>
-<p><% flat.address %></p>
-<% end %>
+<div class="row">
+    <div class="col-12">
+      <h1>All our Flats</h1>
+    </div>
+  </div>
 
+<div class="row">
+    <div class="col">
+      <p>You searched for <strong><%= @query %></strong>. We found <%= @flats.count %> flats out of our <%= Flat.count %> on our website.</p>
+    </div>
+  </div>
